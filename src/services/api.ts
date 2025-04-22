@@ -11,7 +11,7 @@ export const fetchCharacters = async (name?: string, status?: string): Promise<C
     return response.data.results;
 };
 
-export const fetchCharacterByID = async (id: string): Promise<Character> => {
+export const fetchCharacterByID = async (id: string | undefined): Promise<Character> => {
     try {
         const response = await apiLink.get(`/character/${id}`);
         return response.data;

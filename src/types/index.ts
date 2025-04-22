@@ -48,6 +48,6 @@ export interface AppError {
     status?: number;
 }
 
-export interface CharacterDetailParams {
+export type CharacterDetailParams = {
     id: string;
-}
+} & Record<string, string | undefined>;

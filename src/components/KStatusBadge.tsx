@@ -13,7 +13,7 @@ const StatusBadge = styled.span<KStatusBadgeProps>`
     background-color: ${props => {
         switch (props.status) {
             case 'Alive':
-                return '#76fb61';
+                return '#5abb4b';
             case 'Dead':
                 return '#ce7c7c'; 
             case 'unknown':

@@ -1,26 +1,27 @@
 import { useEffect, useState } from "react";
-import { fetchCharacters } from "../services/api";
 import { Character } from "../types";
+import { fetchCharacters } from "../services/api";
 
-function useCharacters(name: string, status: string): {
-    characters: Character[];
-    loading: boolean;
-    error: string | null;
-} {
+function useCharacters(name: string, status: string) {
     const [characters, setCharacters] = useState<Character[]>([]);
-    const [loading, setLoading] = useState<boolean>(false);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const getCharacters = async () => {
             setLoading(true);
             try {
-                const response = await fetchCharacters();
-                setCharacters(response);
+                const results = await fetchCharacters(name, status);
+                setCharacters(results);
                 setError(null);
-            } catch (error) {
-                setError("Failed to fetch characters");
-                setCharacters([]);
+            } catch (err: any) {
+                if (err.response?.status === 404) {
+                    setCharacters([]);
+                    setError(null); // Don't show error, just empty list
+                } else {
+                    setError("Failed to fetch characters");
+                    setCharacters([]);
+                }
             } finally {
                 setLoading(false);
             }

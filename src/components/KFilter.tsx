@@ -19,9 +19,10 @@ const KFilter: React.FC<KFilterProps> = ({ nameQuery, setNameQuery, status, setS
             <KSearchBar
                 value={nameQuery}
                 onChange={setNameQuery}
-                placeholder="Search by name..."
+                placeholder="Search characters by name..."
             />
             <StatusSelect value={status} onChange={handleStatusChange}>
+                <option value="">Select Status</option>
                 <option value="alive">Alive</option>
                 <option value="dead">Dead</option>
                 <option value="unknown">Unknown</option>

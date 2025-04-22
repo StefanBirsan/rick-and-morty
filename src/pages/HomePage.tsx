@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import KFilter from "../components/KFilter";
 import KCharacterList from "../components/KCharacterList";
 import useDebounce from "../hooks/useDebounce";
-import useCharacters  from "../hooks/useCharacters";
-import { PageTitle } from "./pageStyles/Page.styles";
+import useCharacters from "../hooks/useCharacters";
+import { PageTitle } from "./pageStyles/HomePage.styles";
 
 const HomePage: React.FC = () => {
-    const [nameQuery, setNameQuery] = useState<string>("");
-    const [status, setStatus] = useState<string>("");
+    const [nameQuery, setNameQuery] = useState("");
+    const [status, setStatus] = useState("");
 
     const debouncedNameQuery = useDebounce(nameQuery, 300);
 

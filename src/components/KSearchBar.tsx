@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from 'react';
-import { SearchInputContainer, ClearButton, SearchInput, SearchIcon} from "./searchBar.styles";
+import { SearchInputContainer, ClearButton, SearchInput, SearchIcon} from "./componentStyles/KSearchBar.styles";
 
 interface SearchBarProps {
     value: string;
@@ -7,7 +7,7 @@ interface SearchBarProps {
     placeholder?: string;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ value, onChange, placeholder } ) => {
+const KSearchBar: React.FC<SearchBarProps> = ({ value, onChange, placeholder } ) => {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         onChange(event.target.value);
     }
@@ -35,4 +35,4 @@ const SearchBar: React.FC<SearchBarProps> = ({ value, onChange, placeholder } ) 
     )
 }
 
-export default SearchBar;
+export default KSearchBar;

@@ -6,6 +6,7 @@ interface KGenderBadgeProps {
 
 const GenderBadge = styled.span<KGenderBadgeProps>`
   display: inline-block;
+  align-content: center;  
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 14px;

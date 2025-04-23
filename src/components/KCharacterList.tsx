@@ -1,7 +1,7 @@
 import React from 'react';
 import {Character} from '../types';
 import KCharacterCard from './KCharacterCard';
-import { Message, CharacterListContainer } from './componentStyles/KCharacterList.styles';
+import { Message, CharacterListContainer } from './componentStyles';
 
 interface KCharacterListProps {
     characters: Character[];

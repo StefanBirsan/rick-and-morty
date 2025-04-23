@@ -5,7 +5,7 @@ import {
     CardImage,
     CardContent,
     CardTitle,
-} from './componentStyles/KCharacterCard.styles';
+} from './componentStyles';
 import StatusBadge from "./KStatusBadge";
 
 interface KCharacterCardProps {

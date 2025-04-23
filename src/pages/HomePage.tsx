@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import KFilter from "../components/KFilter";
-import KCharacterList from "../components/KCharacterList";
-import useDebounce from "../hooks/useDebounce";
-import useCharacters from "../hooks/useCharacters";
-import { PageTitle } from "./pageStyles/HomePage.styles";
+import { KCharacterList, KFilter } from "../components";
+import { useCharacters, useDebounce } from "../hooks";
+import { PageTitle } from "./pageStyles";
 
 const HomePage: React.FC = () => {
     const [nameQuery, setNameQuery] = useState("");

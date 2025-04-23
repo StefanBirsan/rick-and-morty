@@ -1,6 +1,6 @@
 import React from 'react';
 import KSearchBar from './KSearchBar';
-import { FilterContainer, StatusSelect } from './componentStyles/KFilter.styles';
+import { FilterContainer, StatusSelect } from './componentStyles';
 
 interface KFilterProps {
     nameQuery: string;

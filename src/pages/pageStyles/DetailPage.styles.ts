@@ -10,7 +10,7 @@ export const BackButton = styled(Link)`
     display: inline-block;
     margin-bottom: 20px;
     padding: 10px 15px;
-    background-color: #62a4ab;
+    background-color: #504dc7;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -18,7 +18,7 @@ export const BackButton = styled(Link)`
     align-self: flex-start;
 
     &:hover {
-        background-color: #4a8d94;
+        background-color: #3bb727;
     }
 `;
 
@@ -49,14 +49,15 @@ export const Info = styled.div`
 `;
 
 export const Name = styled.h1`
-  margin-bottom: 15px;
-  font-size: 32px;
-  color: #333;
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: #f5f4f4;
 `;
 
 export const InfoItem = styled.div`
   margin: 10px 0;
   font-size: 16px;
+  color: white;  
   
   strong {
     display: inline-block;
@@ -70,11 +71,11 @@ export const Section = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #f0f0f0;
-  font-size: 24px;
-  color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 24px;
+    color: #f8f6f6;
 `;
 
 export const EpisodesList = styled.ul`
@@ -86,14 +87,14 @@ export const EpisodesList = styled.ul`
 `;
 
 export const EpisodeItem = styled.li`
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 4px;
-  border-left: 3px solid #62a4ab;
-  
-  &:hover {
-    background-color: #f0f0f0;
-  }
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 9px;
+    border-left: 3px solid #504dc7;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
 `;
 
 export const LoadingMessage = styled.div`
@@ -108,4 +109,10 @@ export const ErrorMessage = styled.div`
   padding: 20px;
   font-size: 18px;
   color: #f44336;
+`;
+
+export const BadgeContainer = styled.div`
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px; 
 `;

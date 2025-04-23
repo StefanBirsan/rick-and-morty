@@ -1,5 +1,10 @@
 import React, { ChangeEvent } from 'react';
-import { SearchInputContainer, ClearButton, SearchInput, SearchIcon} from "./componentStyles/KSearchBar.styles";
+import {
+    SearchInputContainer,
+    ClearButton,
+    SearchInput,
+    SearchIcon,
+} from "./componentStyles";
 
 interface SearchBarProps {
     value: string;

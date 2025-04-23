@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Character } from "../types";
-import { fetchCharacters } from "../services/api";
+import { fetchCharacters } from "../services";
 
 function useCharacters(name: string, status: string) {
     const [characters, setCharacters] = useState<Character[]>([]);
